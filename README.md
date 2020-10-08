@@ -1,19 +1,17 @@
 # DHT Chord protocol
 
-## Installation
+<b>Team members </b> \
+Shashank Mayekar, Tanya Pathak
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `proj3new` to your list of dependencies in `mix.exs`:
+<b>Working</b> \
+We have been able to initialize the chord network with the given number of nodes and for the given requests. The chord is able to create the nodes and the keys using SHA1. \
+The ‘m’ we are using is 128 which is the original hash from SHA1, where we hash the integer 1 to nunmNodes. \
+Each node is able to successfully request for all the requests (keys) in the network, using findSuccessor() and closestPrecedingNode() methods as part of the Chord API. \
+After summing the number of hops for each request for each node, we have averaged it. \
+\
+<b>Tested with:</b> \
+Number of requests (i.e. numNodes * numRequests) for which we could compute the average is 5000. \
 
-```elixir
-def deps do
-  [
-    {:proj3new, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/proj3new](https://hexdocs.pm/proj3new).
-
+<b>To run </b> \
+mix escript.build \
+Escript proj3new 200 5

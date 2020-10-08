@@ -1,6 +1,4 @@
-# Proj3new
-
-**TODO: Add description**
+# Distributed Hash Table - CHORD protocol
 
 ## Installation
 

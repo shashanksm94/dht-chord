@@ -1,4 +1,4 @@
-# Distributed Hash Table - CHORD protocol
+# DHT Chord protocol
 
 ## Installation
 
